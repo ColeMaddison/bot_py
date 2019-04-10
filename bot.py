@@ -5,11 +5,12 @@ import logging
 from telebot import types
 import requests
 
+API_TOKEN = '721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg'
+
 bot = telebot.TeleBot(API_TOKEN_BOT, threaded=False)
 
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)  # Outputs debug messages to console.
-API_TOKEN = '721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg'
 
 
 @bot.message_handler(commands=['start'])
