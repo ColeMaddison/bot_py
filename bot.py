@@ -6,6 +6,7 @@ from telebot import types
 import requests
 
 API_TOKEN_BOT = '721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg'
+WEATHER_API_KEY = '1ff3202a2e5beed64fcdb7c307480a44'
 
 bot = telebot.TeleBot(API_TOKEN_BOT, threaded=False)
 
@@ -34,7 +35,7 @@ def location(message):
 @bot.message_handler(content_types=["location"])
 def location(message):
    url = requests.get(f'http://api.openweathermap.org/data/2.5/weather?'
-                      f'lat={message.location.latitude}&lon={message.location.longitude}&appid={API_TOKEN}').json()
+                      f'lat={message.location.latitude}&lon={message.location.longitude}&appid={WEATHER_API_KEY}').json()
    bot.send_message(message.chat.id, text=f'{url.get("name")}, {url.get("main").get("temp")}')
 
    #f'{url.get("name")}, {url.get("main").get("temp")}
