@@ -5,7 +5,7 @@ import logging
 from telebot import types
 import requests
 
-API_TOKEN = '721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg'
+API_TOKEN_BOT = '721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg'
 
 bot = telebot.TeleBot(API_TOKEN_BOT, threaded=False)
 
