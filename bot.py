@@ -48,6 +48,14 @@ def echo_message(message):
 
 bot.infinity_polling(True)
 
+bot.remove_webhook()
+
+updater.start_webhook(listen="0.0.0.0",
+                       port=5000,
+                       url_path="https://test-weather-the-best.herokuapp.com/")
+
+bot.set_webhook(url='https://test-weather-the-best.herokuapp.com/' + API_TOKEN_BOT)
+
 
 
 # class BotHandler:
