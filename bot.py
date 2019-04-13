@@ -87,7 +87,7 @@ import os
 from flask import Flask, request
 
 import telebot
-
+WEATHER_API_KEY = '1ff3202a2e5beed64fcdb7c307480a44'
 TOKEN = '721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg'
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
