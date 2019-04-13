@@ -9,7 +9,7 @@ API_TOKEN = "721732720:AAEnxBRKwlkSAMWuZ0YvsF2joId-o1rDlRg"
 
 WEBHOOK_HOST = "https://pacific-sea-51251.herokuapp.com/"
 WEBHOOK_PORT = 8443  # 443, 80, 88 or 8443 (port need to be 'open')
-WEBHOOK_LISTEN = 'https://test-weather-the-best.herokuapp.com/'  # In some VPS you may need to put here the IP addr
+WEBHOOK_LISTEN = 'https://test-weather-the-best.herokuapp.com'  # In some VPS you may need to put here the IP addr
 
 WEBHOOK_SSL_CERT = './webhook_cert.pem'  # Path to the ssl certificate
 WEBHOOK_SSL_PRIV = './webhook_pkey.pem'  # Path to the ssl private key
